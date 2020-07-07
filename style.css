@@ -1,0 +1,126 @@
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 15px;
+}
+
+h2 {
+  color: hsl(234, 12%, 34%);
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+}
+
+div {
+  border-radius: 5px;
+}
+
+.heading-1 {
+  font-weight: 300;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 0;
+}
+
+.heading-2 {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  margin: 0 auto 20px;
+}
+
+.heading-paragraph {
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+}
+
+.top-container {
+  width: 35%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.grid-container {
+  display: grid;
+  height: 75vh;
+  width: 87%;
+  justify-content: center;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    " . . rd rd . . "
+    "gn gn rd rd bl bl"
+    "gn gn yw yw bl bl"
+    " . . yw yw . . ";
+  grid-gap: 25px;
+  margin: 50px auto 70px;
+}
+
+.green-container {
+  background-color: white;
+  text-align: left;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid hsl(180, 62%, 55%);
+  grid-area: gn;
+}
+
+.red-container {
+  background-color: white;
+  text-align: left;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid hsl(0, 78%, 62%);
+  grid-area: rd;
+}
+
+.yellow-container {
+  background-color: white;
+  text-align: left;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid hsl(34, 97%, 64%);
+  grid-area: yw;
+}
+
+.blue-container {
+  background-color: white;
+  text-align: left;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid hsl(212, 86%, 64%);
+  grid-area: bl;
+}
+
+.small-box-img {
+  padding-left: 250px;
+  padding-top: 10px;
+}
+
+.h2-heading {
+  padding: 20px 0 0 30px;
+  margin-bottom: 0;
+}
+
+.paragraph-box {
+  padding-left: 30px;
+  width: 85%;
+  font-size: 13px;
+}
+
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 350px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "gn"
+      "rd"
+      "yw"
+      "bl";
+    grid-gap: 25px;
+    margin: 50px auto 70px;
+  }
+  .top-container {
+    width: 90%;
+  }
+
+  .small-box-img {
+    padding-bottom: 20px;
+  }
+}
